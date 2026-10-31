@@ -1,0 +1,11 @@
+data/
+__pycache__/
+*.egg-info/
+.venv/
+/faithfulness.json
+.env
+.claude/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,50 @@
+{"question": "What does the break statement do inside a for or while loop in Python?", "gold_urls": ["https://docs.python.org/3/tutorial/controlflow.html"]}
+{"question": "What does the pass statement do in Python?", "gold_urls": ["https://docs.python.org/3/tutorial/controlflow.html"]}
+{"question": "How do you create a virtual environment for a Python project?", "gold_urls": ["https://docs.python.org/3/tutorial/venv.html"]}
+{"question": "What is the purpose of the __init__.py files in a Python package directory?", "gold_urls": ["https://docs.python.org/3/tutorial/modules.html"]}
+{"question": "Why can the decimal fraction 0.1 not be represented exactly as a Python float?", "gold_urls": ["https://docs.python.org/3/tutorial/floatingpoint.html"]}
+{"question": "When does the else clause of a try statement run?", "gold_urls": ["https://docs.python.org/3/tutorial/errors.html"]}
+{"question": "Why is it good practice to open files with the with keyword in Python?", "gold_urls": ["https://docs.python.org/3/tutorial/inputoutput.html"]}
+{"question": "Where does sys.argv come from and what does it contain?", "gold_urls": ["https://docs.python.org/3/tutorial/interpreter.html"]}
+{"question": "What is name mangling for private class members in Python?", "gold_urls": ["https://docs.python.org/3/tutorial/classes.html"]}
+{"question": "What does the del statement do to a list?", "gold_urls": ["https://docs.python.org/3/tutorial/datastructures.html"]}
+{"question": "What are lambda expressions used for in Python?", "gold_urls": ["https://docs.python.org/3/tutorial/controlflow.html"]}
+{"question": "Which Python standard library module provides regular expression tools?", "gold_urls": ["https://docs.python.org/3/tutorial/stdlib.html"]}
+{"question": "What is a checkpoint in SQLite WAL mode?", "gold_urls": ["https://www.sqlite.org/wal.html"]}
+{"question": "What does the WITHOUT ROWID clause do in a SQLite CREATE TABLE statement?", "gold_urls": ["https://www.sqlite.org/withoutrowid.html"]}
+{"question": "What are STRICT tables in SQLite?", "gold_urls": ["https://www.sqlite.org/stricttables.html"]}
+{"question": "What is the default maximum number of columns in a SQLite table?", "gold_urls": ["https://www.sqlite.org/limits.html"]}
+{"question": "What is the maximum size of a SQLite database file?", "gold_urls": ["https://www.sqlite.org/limits.html"]}
+{"question": "How does type affinity work in SQLite for a column declared INTEGER?", "gold_urls": ["https://www.sqlite.org/datatype3.html"]}
+{"question": "How do you enable foreign key constraint enforcement in SQLite?", "gold_urls": ["https://www.sqlite.org/foreignkeys.html"]}
+{"question": "What is the SQLite R-Tree module used for?", "gold_urls": ["https://www.sqlite.org/rtree.html"]}
+{"question": "How do you create a full-text search table with FTS5?", "gold_urls": ["https://www.sqlite.org/fts5.html"]}
+{"question": "What does the bm25 function do in FTS5?", "gold_urls": ["https://www.sqlite.org/fts5.html"]}
+{"question": "How does the json_extract function work in SQLite?", "gold_urls": ["https://www.sqlite.org/json1.html"]}
+{"question": "What frame types can a SQLite window function use: ROWS, RANGE or GROUPS?", "gold_urls": ["https://www.sqlite.org/windowfunctions.html"]}
+{"question": "What is the difference between VIRTUAL and STORED generated columns in SQLite?", "gold_urls": ["https://www.sqlite.org/gencol.html"]}
+{"question": "What does the VACUUM command do in SQLite?", "gold_urls": ["https://www.sqlite.org/lang_vacuum.html"]}
+{"question": "How does the ANALYZE command help the SQLite query planner?", "gold_urls": ["https://www.sqlite.org/lang_analyze.html"]}
+{"question": "What does ON CONFLICT DO UPDATE do in a SQLite upsert?", "gold_urls": ["https://www.sqlite.org/lang_upsert.html"]}
+{"question": "What is a partial index in SQLite?", "gold_urls": ["https://www.sqlite.org/partialindex.html"]}
+{"question": "How do you import a CSV file in the sqlite3 command-line shell?", "gold_urls": ["https://www.sqlite.org/cli.html"]}
+{"question": "What string do the first 16 bytes of a SQLite database file contain?", "gold_urls": ["https://www.sqlite.org/fileformat2.html"]}
+{"question": "How does SQLite achieve atomic commit with a rollback journal?", "gold_urls": ["https://www.sqlite.org/atomiccommit.html"]}
+{"question": "What are the RESERVED and PENDING lock states in SQLite?", "gold_urls": ["https://www.sqlite.org/lockingv3.html"]}
+{"question": "What does EXPLAIN QUERY PLAN show?", "gold_urls": ["https://www.sqlite.org/eqp.html"]}
+{"question": "What is a covering index in the SQLite query optimizer?", "gold_urls": ["https://www.sqlite.org/optoverview.html"]}
+{"question": "What does the sqlite3_busy_timeout interface do?", "gold_urls": ["https://www.sqlite.org/c3ref/busy_timeout.html"]}
+{"question": "What does sqlite3_last_insert_rowid return?", "gold_urls": ["https://www.sqlite.org/c3ref/last_insert_rowid.html"]}
+{"question": "What is the purpose of sqlite3_prepare_v2?", "gold_urls": ["https://www.sqlite.org/c3ref/prepare.html"]}
+{"question": "What values can the journal_mode pragma take?", "gold_urls": ["https://www.sqlite.org/pragma.html"]}
+{"question": "How do you attach another database file to a SQLite connection?", "gold_urls": ["https://www.sqlite.org/lang_attach.html"]}
+{"question": "What does the AUTOINCREMENT keyword change about rowid selection in SQLite?", "gold_urls": ["https://www.sqlite.org/autoinc.html"]}
+{"question": "Which time value formats does SQLite accept in its date and time functions?", "gold_urls": ["https://www.sqlite.org/lang_datefunc.html"]}
+{"question": "What does the sqlite3_serialize function do?", "gold_urls": ["https://www.sqlite.org/c3ref/serialize.html"]}
+{"question": "In what situations is SQLite a good choice compared to a client/server database?", "gold_urls": ["https://www.sqlite.org/whentouse.html"]}
+{"question": "Are NULL values considered distinct in a SQLite UNIQUE column?", "gold_urls": ["https://www.sqlite.org/nulls.html"]}
+{"question": "How do recursive common table expressions work in SQLite?", "gold_urls": ["https://www.sqlite.org/lang_with.html"]}
+{"question": "What is the SQLite online backup API?", "gold_urls": ["https://www.sqlite.org/backup.html"]}
+{"question": "What is memory-mapped I/O in SQLite and how is it enabled?", "gold_urls": ["https://www.sqlite.org/mmap.html"]}
+{"question": "What is the Lemon parser generator?", "gold_urls": ["https://www.sqlite.org/lemon.html"]}
+{"question": "What temporary files does SQLite create?", "gold_urls": ["https://www.sqlite.org/tempfiles.html"]}

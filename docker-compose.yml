@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      # set OWI_LLM_URL=http://host.docker.internal:11434/v1 to use a host Ollama (e.g. non-NVIDIA GPU)
+      OWI_LLM_URL: ${OWI_LLM_URL:-http://ollama:11434/v1}
+    volumes: ["./data:/app/data", "./eval:/app/eval", "hf:/root/.cache/huggingface"]
+    depends_on: [ollama]
+  ollama:
+    image: ollama/ollama
+    # default context is ~2k tokens and silently truncates the agent's evidence
+    environment:
+      OLLAMA_CONTEXT_LENGTH: 16384
+    volumes: ["ollama:/root/.ollama"]
+volumes:
+  ollama:
+  hf:

@@ -1,0 +1,764 @@
+[
+ {
+  "question": "What does the break statement do inside a for or while loop in Python?",
+  "sentences": [
+   {
+    "sentence": "The break statement is used to exit a loop prematurely [1-4].",
+    "supported": true
+   },
+   {
+    "sentence": "When a break is encountered inside a loop, the loop is immediately terminated, and the program flow continues with the first statement following the loop [1-4].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the pass statement do in Python?",
+  "sentences": [
+   {
+    "sentence": "The pass statement in Python does nothing [4-6].",
+    "supported": false
+   },
+   {
+    "sentence": "It is used as a placeholder when a statement is required syntactically but the program requires no action [4-6].",
+    "supported": false
+   },
+   {
+    "sentence": "For example, it can be used in a loop or a function where the developer intends to implement code later [4-6].",
+    "supported": false
+   }
+  ]
+ },
+ {
+  "question": "How do you create a virtual environment for a Python project?",
+  "sentences": [
+   {
+    "sentence": "To create a virtual environment for a Python project, you can use the venv module.",
+    "supported": false
+   },
+   {
+    "sentence": "This module allows you to create a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages.",
+    "supported": false
+   },
+   {
+    "sentence": "You can create a virtual environment by deciding upon a directory where you want to place it, and running the venv module as a script with the directory path: `python -m venv tutorial-env` [15-1].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the purpose of the __init__.py files in a Python package directory?",
+  "sentences": [
+   {
+    "sentence": "The purpose of the __init__.py files is to make Python treat directories as packages, allowing for the definition of initialization code for the package [6-13].",
+    "supported": true
+   },
+   {
+    "sentence": "They can also set the __all__ variable to specify which submodules should be imported when using from package import * [6-16].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "Why can the decimal fraction 0.1 not be represented exactly as a Python float?",
+  "sentences": [
+   {
+    "sentence": "The decimal fraction 0.1 cannot be represented exactly as a Python float because it is approximated as the nearest representable binary fraction, which is 3602879701896397 / 2 ** 55 [3-1].",
+    "supported": true
+   },
+   {
+    "sentence": "This approximation results in a value that is very close to but not exactly equal to the true decimal value of 0.1 [3-1].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "When does the else clause of a try statement run?",
+  "sentences": [
+   {
+    "sentence": "The else clause of a try statement runs when no exception occurs during the execution of the try clause [10-3].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "Why is it good practice to open files with the with keyword in Python?",
+  "sentences": [
+   {
+    "sentence": "It is good practice to use the with keyword when dealing with file objects because it ensures that the file is properly closed after its suite finishes, even if an exception is raised [11-10].",
+    "supported": true
+   },
+   {
+    "sentence": "This practice is shorter and more convenient than writing equivalent try-finally blocks [11-10].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "Where does sys.argv come from and what does it contain?",
+  "sentences": [
+   {
+    "sentence": "sys.argv is a list of strings that contains the command-line arguments passed to the script [4-1].",
+    "supported": true
+   },
+   {
+    "sentence": "These arguments are stored in the sys module\u2019s argv attribute [7-2].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is name mangling for private class members in Python?",
+  "sentences": [
+   {
+    "sentence": "Name mangling is used for private members to avoid name clashes with names defined by subclasses [2-23].",
+    "supported": true
+   },
+   {
+    "sentence": "This mechanism replaces identifiers of the form __spam with _classname__spam [2-23].",
+    "supported": true
+   },
+   {
+    "sentence": "The mangling is designed to avoid accidents but still allows access to private variables, which can be useful in special circumstances [2-24].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the del statement do to a list?",
+  "sentences": [
+   {
+    "sentence": "The del statement can be used to remove an item from a list given its index [8-10].",
+    "supported": true
+   },
+   {
+    "sentence": "It can also remove slices from a list or clear the entire list [8-10].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What are lambda expressions used for in Python?",
+  "sentences": [
+   {
+    "sentence": "Lambda expressions in Python are used to create small anonymous functions, which can be used wherever function objects are required [8-4].",
+    "supported": false
+   },
+   {
+    "sentence": "These functions are syntactically restricted to a single expression and are a form of syntactic sugar for normal function definitions [1-27].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "Which Python standard library module provides regular expression tools?",
+  "sentences": [
+   {
+    "sentence": "The re module provides regular expression tools for advanced string processing [4-2].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is a checkpoint in SQLite WAL mode?",
+  "sentences": [
+   {
+    "sentence": "A checkpoint in SQLite WAL mode is a process that transfers transactions recorded in the Write-Ahead Log (WAL) back into the original database file [22-1].",
+    "supported": true
+   },
+   {
+    "sentence": "This operation helps to ensure data consistency and can be initiated automatically or manually [175-0].",
+    "supported": false
+   },
+   {
+    "sentence": "The checkpoint mechanism is designed to manage the WAL file, ensuring it does not grow indefinitely by periodically transferring its contents back to the main database [22-8].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the WITHOUT ROWID clause do in a SQLite CREATE TABLE statement?",
+  "sentences": [
+   {
+    "sentence": "The WITHOUT ROWID clause in a SQLite CREATE TABLE statement allows for the omission of the default rowid column [25-0].",
+    "supported": true
+   },
+   {
+    "sentence": "This can provide space and performance benefits [25-0].",
+    "supported": true
+   },
+   {
+    "sentence": "It requires the definition of a PRIMARY KEY for the table [24-17], [25-0].",
+    "supported": true
+   },
+   {
+    "sentence": "Without the rowid, SQLite uses the PRIMARY KEY as the key for storage in a b-tree [89-39].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What are STRICT tables in SQLite?",
+  "sentences": [
+   {
+    "sentence": "STRICT tables in SQLite enforce strict typing rules, requiring every column to specify a datatype [27-1].",
+    "supported": true
+   },
+   {
+    "sentence": "This means that columns cannot be left without a datatype, and the data must match the specified type unless it is of type ANY [27-1].",
+    "supported": true
+   },
+   {
+    "sentence": "Additionally, SQLite introduces the ANY datatype to allow columns to accept any kind of data, but in STRICT tables, columns of type ANY do not undergo type coercion [27-3].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the default maximum number of columns in a SQLite table?",
+  "sentences": [
+   {
+    "sentence": "The default setting for SQLITE_MAX_COLUMN is 2000 [71-3].",
+    "supported": true
+   },
+   {
+    "sentence": "This can be changed at compile time to values as large as 32767, but many database designers recommend keeping it at a smaller number [71-3].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the maximum size of a SQLite database file?",
+  "sentences": [
+   {
+    "sentence": "The maximum size of a SQLite database file is 4294967294 pages, with each page being a power of two between 512 and 65536 bytes.",
+    "supported": false
+   },
+   {
+    "sentence": "At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 281 terabytes [71-11].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "How does type affinity work in SQLite for a column declared INTEGER?",
+  "sentences": [
+   {
+    "sentence": "Type affinity in SQLite for a column declared INTEGER means that while the column can still hold any type of data, SQLite will prefer to treat the data as integers [102-7].",
+    "supported": false
+   },
+   {
+    "sentence": "This preference can lead to automatic type conversions when inserting or selecting data, such as converting strings that represent integers into actual integer values [102-11].",
+    "supported": true
+   },
+   {
+    "sentence": "However, if the data cannot be converted, it will be stored as a string [102-11].",
+    "supported": false
+   }
+  ]
+ },
+ {
+  "question": "How do you enable foreign key constraint enforcement in SQLite?",
+  "sentences": [
+   {
+    "sentence": "You can enable foreign key constraint enforcement in SQLite by using the `PRAGMA foreign_keys` statement.",
+    "supported": false
+   },
+   {
+    "sentence": "For example, setting `PRAGMA foreign_keys = ON;` will enable foreign key constraints [33-9].",
+    "supported": true
+   },
+   {
+    "sentence": "However, foreign key constraints are disabled by default in SQLite for backwards compatibility [39-5].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the SQLite R-Tree module used for?",
+  "sentences": [
+   {
+    "sentence": "The SQLite R-Tree module is used for efficiently storing and querying multi-dimensional data [34-1].",
+    "supported": true
+   },
+   {
+    "sentence": "It supports dimensions ranging from 1 to 5 [34-2].",
+    "supported": false
+   },
+   {
+    "sentence": "This module is particularly useful for applications requiring spatial indexing [34-1].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "How do you create a full-text search table with FTS5?",
+  "sentences": [
+   {
+    "sentence": "To create a full-text search table with FTS5, you use the `CREATE VIRTUAL TABLE` statement followed by the `USING fts5` clause [66-0].",
+    "supported": true
+   },
+   {
+    "sentence": "You can specify columns for the table, and additional options can be provided to configure the table [66-1].",
+    "supported": true
+   },
+   {
+    "sentence": "For example, you might create a table like this: `CREATE VIRTUAL TABLE email USING fts5(sender, title, body)` [66-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the bm25 function do in FTS5?",
+  "sentences": [
+   {
+    "sentence": "The bm25 function in FTS5 returns a real value indicating how well the current row matches the full-text query [66-42].",
+    "supported": true
+   },
+   {
+    "sentence": "This score is calculated based on the match quality, with better matches yielding numerically smaller values [66-42].",
+    "supported": true
+   },
+   {
+    "sentence": "The function can be customized by passing weights for different columns, adjusting the phrase frequency calculation accordingly [66-43].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "How does the json_extract function work in SQLite?",
+  "sentences": [
+   {
+    "sentence": "The `json_extract` function in SQLite returns an SQL NULL, TEXT, INTEGER, or REAL value if there is only one path argument and the path references a JSON null, string, or numeric value.",
+    "supported": false
+   },
+   {
+    "sentence": "If there are multiple path arguments, it returns a well-formed JSON array holding the various values. [116-15] [116-17]",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What frame types can a SQLite window function use: ROWS, RANGE or GROUPS?",
+  "sentences": [
+   {
+    "sentence": "SQLite window functions can use the frame types ROWS, RANGE, or GROUPS [59-8].",
+    "supported": true
+   },
+   {
+    "sentence": "These frame types determine how the starting and ending boundaries of the frame are measured [59-7].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the difference between VIRTUAL and STORED generated columns in SQLite?",
+  "sentences": [
+   {
+    "sentence": "Virtual and stored generated columns differ in how their values are computed and stored.",
+    "supported": false
+   },
+   {
+    "sentence": "The value of a virtual column is computed when read, whereas the value of a stored column is computed when the row is written [38-1].",
+    "supported": true
+   },
+   {
+    "sentence": "Additionally, stored columns take up space in the database file, whereas virtual columns use more CPU cycles when being read [38-1].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the VACUUM command do in SQLite?",
+  "sentences": [
+   {
+    "sentence": "The VACUUM command in SQLite rebuilds the database file, repacking it into a minimal amount of disk space [176-0].",
+    "supported": true
+   },
+   {
+    "sentence": "It can be used to reclaim unused space and reduce the size of the database file [176-3].",
+    "supported": true
+   },
+   {
+    "sentence": "This command works by copying the contents of the database into a temporary file and then overwriting the original with the contents of the temporary file [176-3].",
+    "supported": false
+   }
+  ]
+ },
+ {
+  "question": "How does the ANALYZE command help the SQLite query planner?",
+  "sentences": [
+   {
+    "sentence": "The ANALYZE command gathers statistics about tables and indices, which the query optimizer can use to choose better query plans [240-0].",
+    "supported": true
+   },
+   {
+    "sentence": "Running ANALYZE can lead to significant performance improvements for complex queries [240-0].",
+    "supported": true
+   },
+   {
+    "sentence": "It is recommended to run ANALYZE during development and testing to ensure consistent query plans across different database instances [240-3].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does ON CONFLICT DO UPDATE do in a SQLite upsert?",
+  "sentences": [
+   {
+    "sentence": "ON CONFLICT DO UPDATE in a SQLite upsert specifies that if a uniqueness constraint would be violated by the insert, the insert will be omitted, and instead, the corresponding DO UPDATE operation will be performed [376-0].",
+    "supported": true
+   },
+   {
+    "sentence": "This operation can increment a counter or update a specific column based on the conflicting row [376-1][376-2].",
+    "supported": true
+   },
+   {
+    "sentence": "The \"excluded.\" prefix is used to refer to the value that would have been inserted had the constraint not failed [376-2].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is a partial index in SQLite?",
+  "sentences": [
+   {
+    "sentence": "A partial index in SQLite is an index over a subset of the rows of a table [125-0].",
+    "supported": true
+   },
+   {
+    "sentence": "It can result in smaller database files and improvements in both query and write performance [125-0].",
+    "supported": true
+   },
+   {
+    "sentence": "Partial indexes are created by adding a WHERE clause to the end of an ordinary CREATE INDEX statement [125-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "How do you import a CSV file in the sqlite3 command-line shell?",
+  "sentences": [
+   {
+    "sentence": "To import a CSV file into an SQLite table using the sqlite3 command-line shell, you can use the `.import` command followed by the filename of the CSV file and the name of the target SQLite table.",
+    "supported": false
+   },
+   {
+    "sentence": "For example, `.import mydata.csv mytable` would import the CSV file `mydata.csv` into the `mytable` table. [83-21]",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What string do the first 16 bytes of a SQLite database file contain?",
+  "sentences": [
+   {
+    "sentence": "The first 16 bytes of a SQLite database file contain the header string \"SQLite format 3\\000\" [89-2].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "How does SQLite achieve atomic commit with a rollback journal?",
+  "sentences": [
+   {
+    "sentence": "SQLite achieves atomic commit by using a rollback journal to record changes made during a transaction.",
+    "supported": false
+   },
+   {
+    "sentence": "If a transaction is interrupted, the rollback journal can be used to restore the database to its state before the transaction started [30-2].",
+    "supported": true
+   },
+   {
+    "sentence": "The existence of the rollback journal ensures that transactions appear atomic, as the journal can be used to roll back changes if a crash occurs [100-18].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What are the RESERVED and PENDING lock states in SQLite?",
+  "sentences": [
+   {
+    "sentence": "A RESERVED lock means that the process is planning on writing to the database file at some point in the future but is currently just reading from the file.",
+    "supported": false
+   },
+   {
+    "sentence": "Only a single RESERVED lock may be active at one time, though multiple SHARED locks can coexist with a single RESERVED lock [53-3].",
+    "supported": true
+   },
+   {
+    "sentence": "A PENDING lock indicates that the process holding the lock wants to write to the database as soon as possible and is waiting for all current SHARED locks to clear [53-10].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does EXPLAIN QUERY PLAN show?",
+  "sentences": [
+   {
+    "sentence": "EXPLAIN QUERY PLAN shows the strategy or plan that SQLite uses to execute a specific SQL query [241-9].",
+    "supported": true
+   },
+   {
+    "sentence": "It reports on how the query uses database indices [241-4].",
+    "supported": true
+   },
+   {
+    "sentence": "This output is intended for interactive debugging and troubleshooting [202-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is a covering index in the SQLite query optimizer?",
+  "sentences": [
+   {
+    "sentence": "A covering index in SQLite contains all the columns needed to satisfy a query, allowing SQLite to retrieve all required data without needing to access the original table [241-3].",
+    "supported": true
+   },
+   {
+    "sentence": "This can significantly reduce the cost of the query by eliminating the need for additional rowid lookups [415-11].",
+    "supported": true
+   },
+   {
+    "sentence": "Covering indexes can also be used to perform both searching and sorting efficiently in a single step [415-20].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the sqlite3_busy_timeout interface do?",
+  "sentences": [
+   {
+    "sentence": "The sqlite3_busy_timeout interface sets a busy handler that sleeps for a specified amount of time when a table is locked, allowing multiple attempts to access the database before returning SQLITE_BUSY [170-0].",
+    "supported": true
+   },
+   {
+    "sentence": "This interface is used to implement PRAGMA busy_timeout [164-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does sqlite3_last_insert_rowid return?",
+  "sentences": [
+   {
+    "sentence": "`sqlite3_last_insert_rowid` returns the rowid of the most recent successful INSERT into a rowid table or virtual table on the database connection, unless no successful INSERTs have occurred, in which case it returns zero [266-0].",
+    "supported": true
+   },
+   {
+    "sentence": "This function may return unpredictable results if another thread performs an INSERT on the same database connection while `sqlite3_last_insert_rowid` is running [266-2].",
+    "supported": true
+   },
+   {
+    "sentence": "It does not work for WITHOUT ROWID tables [25-4].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the purpose of sqlite3_prepare_v2?",
+  "sentences": [
+   {
+    "sentence": "The purpose of sqlite3_prepare_v2 is to compile SQL statements into byte-code programs, which are then executed using sqlite3_step.",
+    "supported": false
+   },
+   {
+    "sentence": "This interface is recommended for all new programs [393-288], [155-4], [151-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What values can the journal_mode pragma take?",
+  "sentences": [
+   {
+    "sentence": "The journal_mode pragma can take several values including DELETE, TRUNCATE, PERSIST, MEMORY, and OFF [32-27].",
+    "supported": true
+   },
+   {
+    "sentence": "OFF journal mode disables the rollback journal completely [32-30].",
+    "supported": false
+   },
+   {
+    "sentence": "Additionally, the WAL journal mode is also supported [22-8].",
+    "supported": false
+   }
+  ]
+ },
+ {
+  "question": "How do you attach another database file to a SQLite connection?",
+  "sentences": [
+   {
+    "sentence": "You can attach another database file to a SQLite connection using the `ATTACH DATABASE` statement, where the filename for the database to be attached is specified before the `AS` keyword, and the name of the database used internally by SQLite is specified after the `AS` keyword [174-0].",
+    "supported": true
+   },
+   {
+    "sentence": "This statement adds another database file to the current database connection, and the schema-names 'main' and 'temp' refer to the main database and the database used for temporary tables, respectively [174-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the AUTOINCREMENT keyword change about rowid selection in SQLite?",
+  "sentences": [
+   {
+    "sentence": "The AUTOINCREMENT keyword changes the automatic ROWID assignment algorithm to prevent the reuse of ROWIDs over the lifetime of the database [90-4].",
+    "supported": true
+   },
+   {
+    "sentence": "This ensures that automatically chosen ROWIDs are increasing but not necessarily sequential [90-3].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "Which time value formats does SQLite accept in its date and time functions?",
+  "sentences": [
+   {
+    "sentence": "SQLite accepts date and time values as ISO-8601 text, Julian day numbers, or Unix timestamps [110-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What does the sqlite3_serialize function do?",
+  "sentences": [
+   {
+    "sentence": "The sqlite3_serialize function returns a pointer to memory that is a serialization of the specified database on the given database connection [219-0].",
+    "supported": true
+   },
+   {
+    "sentence": "This serialization can be a copy of the disk file for an ordinary on-disk database, or the sequence of bytes that would be written to disk for an in-memory or \"TEMP\" database [393-76].",
+    "supported": true
+   },
+   {
+    "sentence": "If the SQLITE_SERIALIZE_NOCOPY flag is set, it returns a pointer to the contiguous memory representation of the database currently in use by SQLite, provided such a representation exists [219-1].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "In what situations is SQLite a good choice compared to a client/server database?",
+  "sentences": [
+   {
+    "sentence": "SQLite is a good choice for applications that require local data storage for individual devices or applications, such as cellphones, set-top boxes, and the internet of things [51-0].",
+    "supported": true
+   },
+   {
+    "sentence": "It is also suitable for use as a cache of relevant content from an enterprise RDBMS, reducing latency and network load [51-3].",
+    "supported": true
+   },
+   {
+    "sentence": "Additionally, SQLite is easy to set up and use, making it a good option for educational purposes and for prototyping new database language features [51-8].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "Are NULL values considered distinct in a SQLite UNIQUE column?",
+  "sentences": [
+   {
+    "sentence": "SQLite considers NULL values distinct in a UNIQUE column [149-8].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "How do recursive common table expressions work in SQLite?",
+  "sentences": [
+   {
+    "sentence": "Recursive common table expressions in SQLite allow writing queries that can walk through tree or graph structures [191-0].",
+    "supported": true
+   },
+   {
+    "sentence": "They consist of an initial-select and one or more recursive-selects [191-1].",
+    "supported": true
+   },
+   {
+    "sentence": "The recursive table must appear exactly once in the FROM clause of the recursive-select and not elsewhere in the initial-select or recursive-select [191-1].",
+    "supported": true
+   },
+   {
+    "sentence": "Using a LIMIT clause can help ensure that recursion stops after a certain number of iterations [191-6].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the SQLite online backup API?",
+  "sentences": [
+   {
+    "sentence": "The SQLite online backup API is a method for making backups of a live SQLite database.",
+    "supported": false
+   },
+   {
+    "sentence": "It allows the contents of one database to be copied into another database file, replacing any original contents of the target database.",
+    "supported": false
+   },
+   {
+    "sentence": "This API can perform the copy operation incrementally, meaning the source database does not need to be locked for the entire duration of the copy, only briefly when it is being read from.",
+    "supported": false
+   },
+   {
+    "sentence": "This allows other database users to continue using the database without excessive delays while a backup is made [64-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is memory-mapped I/O in SQLite and how is it enabled?",
+  "sentences": [
+   {
+    "sentence": "Memory-mapped I/O in SQLite allows the operating system to map a database file into the application's address space, enabling SQLite to access the file without copying the entire page [128-3].",
+    "supported": true
+   },
+   {
+    "sentence": "This can make certain operations faster by avoiding the need to copy data between kernel space and user space [128-0].",
+    "supported": true
+   },
+   {
+    "sentence": "To enable memory-mapped I/O, an application can set the `mmap_size` to a large value using the `PRAGMA mmap_size` statement [128-4].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What is the Lemon parser generator?",
+  "sentences": [
+   {
+    "sentence": "The Lemon parser generator is a tool used to generate parsers for programming languages, specifically for SQLite [213-0].",
+    "supported": true
+   },
+   {
+    "sentence": "It reads a grammar of the input language and emits C-code to implement a parser for that language [213-0].",
+    "supported": true
+   },
+   {
+    "sentence": "Lemon is designed to be reentrant and threadsafe, which is particularly important for SQLite due to recursive calls during parsing [213-0].",
+    "supported": true
+   }
+  ]
+ },
+ {
+  "question": "What temporary files does SQLite create?",
+  "sentences": [
+   {
+    "sentence": "SQLite creates several types of temporary files during database operations, including rollback journals, statement journals, and various other temporary files [30-0].",
+    "supported": true
+   },
+   {
+    "sentence": "These temporary files are used for different purposes such as implementing atomic commit and rollback capabilities [30-1].",
+    "supported": true
+   },
+   {
+    "sentence": "The storage of temporary files can be influenced by the settings of the `temp_store` pragma and the `SQLITE_TEMP_STORE` compile-time parameter [32-54].",
+    "supported": true
+   },
+   {
+    "sentence": "However, the evidence does not provide a complete list of all temporary file types used by SQLite [30-0].",
+    "supported": false
+   }
+  ]
+ }
+]

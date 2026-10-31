@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "owi-rag"
+version = "0.1.0"
+description = "Agentic RAG over Open Web Index data"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["openai>=1.0", "fastapi", "uvicorn", "numpy"]
+
+[project.optional-dependencies]
+ml = ["bm25s", "faiss-cpu", "sentence-transformers", "pyarrow"]
+crawl = ["trafilatura"]
+
+[tool.setuptools]
+packages = ["owi_rag"]
+
+[tool.ruff]
+line-length = 100

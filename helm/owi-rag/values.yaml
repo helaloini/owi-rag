@@ -1,0 +1,5 @@
+image: owi-rag:latest
+# The chart deploys the API only; point this at an existing Ollama or vLLM server (see README).
+llmUrl: http://ollama:11434/v1
+llmModel: qwen2.5:7b-instruct
+dataClaim: owi-rag-data

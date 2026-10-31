@@ -1,0 +1,4 @@
+apiVersion: v2
+name: owi-rag
+version: 0.1.0
+description: owi-rag API (expects an existing PVC holding the built indexes and an OpenAI-compatible LLM endpoint)
